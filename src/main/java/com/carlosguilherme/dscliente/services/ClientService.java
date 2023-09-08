@@ -17,7 +17,7 @@ import com.carlosguilherme.dscliente.repostories.ClientRepository;
 import jakarta.persistence.EntityNotFoundException;
 
 @Service
-public class ClienteService {
+public class ClientService {
 	
 	@Autowired
 	private ClientRepository repository;
