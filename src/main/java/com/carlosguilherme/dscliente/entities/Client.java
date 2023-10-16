@@ -24,12 +24,12 @@ public class Client {
 	public Client() {
 	}
 
-	public Client(Long id, String name, String cpf, Double income, LocalDate brithDate, Integer children) {
+	public Client(Long id, String name, String cpf, Double income, LocalDate birthDate, Integer children) {
 		this.id = id;
 		this.name = name;
 		this.cpf = cpf;
 		this.income = income;
-		this.birthDate = brithDate;
+		this.birthDate = birthDate;
 		this.children = children;
 	}
 
@@ -65,12 +65,12 @@ public class Client {
 		this.income = income;
 	}
 
-	public LocalDate getBrithDate() {
+	public LocalDate getBirthDate() {
 		return birthDate;
 	}
 
-	public void setBrithDate(LocalDate brithDate) {
-		this.birthDate = brithDate;
+	public void setBirthDate(LocalDate birthDate) {
+		this.birthDate = birthDate;
 	}
 
 	public Integer getChildren() {
