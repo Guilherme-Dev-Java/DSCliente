@@ -4,12 +4,17 @@ import java.time.LocalDate;
 
 import com.carlosguilherme.dscliente.entities.Client;
 
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.PastOrPresent;
+
 public class ClientDTO {
 
 	private Long id;
+	@NotBlank(message = "O campo nome é obrigatório.")
 	private String name;
 	private String cpf;
 	private Double income;
+	@PastOrPresent(message = "Verifique a data de aniversário.")
 	private LocalDate birthDate;
 	private Integer children;
 	
