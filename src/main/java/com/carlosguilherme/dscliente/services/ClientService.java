@@ -78,7 +78,7 @@ public class ClientService {
 	}
 
 	private void copyDtoEntity(ClientDTO dto, Client entity) {
-		entity.setId(dto.getId());
+		
 		entity.setName(dto.getName());
 		entity.setCpf(dto.getCpf());
 		entity.setIncome(dto.getIncome());
